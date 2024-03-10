@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
-import 'package:greenmates/common/widgets/app_network_image.dart';
-import 'package:greenmates/common/widgets/base_app_bar.dart';
-import 'package:greenmates/common/widgets/base_expansion_tile.dart';
-import 'package:greenmates/recipes/presentation/food_type_info.dart';
-import 'package:greenmates/recipes/data/json_parser.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+
+import '../../common/widgets/app_network_image.dart';
+import '../../common/widgets/base_app_bar.dart';
+import '../../common/widgets/base_expansion_tile.dart';
+import '../data/json_parser.dart';
+import 'food_type_info.dart';
 
 class RecipeDetails extends StatelessWidget {
   const RecipeDetails({super.key, required this.recipe});

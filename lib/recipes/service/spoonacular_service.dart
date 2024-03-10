@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
-
-import 'package:greenmates/env/env.dart';
-import 'package:greenmates/recipes/service/recipe_service.dart';
-import 'package:greenmates/recipes/data/json_parser.dart';
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
 
-@Injectable(as: RecipeService) 
+import '../../env/env.dart';
+import '../data/json_parser.dart';
+import 'recipe_service.dart';
+
+@Injectable(as: RecipeService)
 class SpoonacularService implements RecipeService {
   @override
   Future<List<Recipe>> fetchRecipes() async {

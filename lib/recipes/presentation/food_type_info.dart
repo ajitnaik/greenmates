@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:greenmates/recipes/data/json_parser.dart';
+
+import '../../common/constants/image_constants.dart';
+import '../data/json_parser.dart';
 
 class FoodTypeInfo extends StatelessWidget {
   const FoodTypeInfo({
@@ -19,15 +21,15 @@ class FoodTypeInfo extends StatelessWidget {
       alignment: alignment,
       children: [
         if (recipe.sustainable != null && recipe.sustainable!)
-          Image.asset('images/sustainable.png', width: width, height: height),
+          Image.asset(sustainableImage, width: width, height: height),
         if (recipe.vegan != null && recipe.vegan!)
-          Image.asset('images/vegan.png', width: width, height: height),
+          Image.asset(veganImage, width: width, height: height),
         if (recipe.glutenFree != null && recipe.glutenFree!)
-          Image.asset('images/glutenfree.png', width: width, height: height),
+          Image.asset(glutenFreeImage, width: width, height: height),
         if (recipe.vegetarian != null && recipe.vegetarian!)
-          Image.asset('images/vegetarian.png', width: width, height: height),
+          Image.asset(vegetarianImage, width: width, height: height),
         if (recipe.dairyFree != null && recipe.dairyFree!)
-          Image.asset('images/dairyfree.png', width: width, height: height),
+          Image.asset(dairyFreeImage, width: width, height: height),
       ],
     );
   }

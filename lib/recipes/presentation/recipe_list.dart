@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:greenmates/common/widgets/app_network_image.dart';
-import 'package:greenmates/recipes/presentation/food_type_info.dart';
-import 'package:greenmates/recipes/presentation/recipe_details.dart';
-import 'package:greenmates/recipes/data/json_parser.dart';
+
+import '../../common/widgets/app_network_image.dart';
+import '../data/json_parser.dart';
+import 'food_type_info.dart';
+import 'recipe_details.dart';
 
 class RecipeList extends StatelessWidget {
   const RecipeList({super.key, required this.recipes});

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:greenmates/common/widgets/base_app_bar.dart';
-import 'package:greenmates/recipes/presentation/recipes_page.dart';
+
+import '../common/widgets/base_app_bar.dart';
+import '../recipes/presentation/recipes_page.dart';
 
 
 class HomePage extends StatelessWidget {

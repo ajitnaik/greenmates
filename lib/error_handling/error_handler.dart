@@ -1,7 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:greenmates/error_handling/exception_widget.dart';
+
+import 'exception_widget.dart';
 
 class ErrorHandler {
   void onErrorDetails(FlutterErrorDetails details) {

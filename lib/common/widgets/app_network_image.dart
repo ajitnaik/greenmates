@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:greenmates/common/constants/image_constants.dart';
 import 'package:transparent_image/transparent_image.dart';
+
+import '../constants/image_constants.dart';
 
 class AppNetworkImage extends StatelessWidget {
   const AppNetworkImage({super.key, required this.url});
@@ -13,9 +14,9 @@ class AppNetworkImage extends StatelessWidget {
             placeholder: kTransparentImage,
             image: url!,
             imageErrorBuilder: (context, error, stackTrace) {
-              return Image.asset(placeholderImageUrl);
+              return Image.asset(placeholderImage);
             },
           )
-        : Image.asset(placeholderImageUrl,);
+        : Image.asset(placeholderImage,);
   }
 }

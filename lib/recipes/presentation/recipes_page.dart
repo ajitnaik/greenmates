@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:greenmates/dependency_injection.dart';
-import 'package:greenmates/common/widgets/base_app_bar.dart';
-import 'package:greenmates/recipes/service/recipe_service.dart';
-import 'package:greenmates/recipes/presentation/recipe_list.dart';
 
+import '../../common/widgets/base_app_bar.dart';
+import '../../dependency_injection.dart';
 import '../data/json_parser.dart';
+import '../service/recipe_service.dart';
+import 'recipe_list.dart';
 
 class RecipesPage extends StatelessWidget {
   RecipesPage({super.key});
@@ -44,7 +44,9 @@ class RecipesPage extends StatelessWidget {
                 actions: <Widget>[
                   TextButton(
                       onPressed: () => {
-                            Navigator.of(context)..pop()..pop(),
+                            Navigator.of(context)
+                              ..pop()
+                              ..pop(),
                           },
                       child: const Text('OK')),
                 ],
